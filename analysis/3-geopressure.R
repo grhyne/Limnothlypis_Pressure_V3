@@ -2,13 +2,13 @@
 # Make sure you have already label your tag with `1-label.qmd`
 # This script is meant to be edited according to the specific of your project. In particular edit
 # `config.yml` to best optimize your tracks.
-
+setwd("C:/Users/Garrett Rhyne/Documents/GitHub/Limnothlypis_Pressure_V3")
 library(GeoPressureR)
 
 # Define tag id that you want to compute
-# id <- "18LX" # Run a single tag
-# list_id <- c("18LX", "") # run specific tags
-list_id <- tail(names(yaml::yaml.load_file("config.yml", eval.expr = FALSE)), -1) # run all tag
+# id <- "CB594" # Run a single tag
+ list_id <- c("CB627") # run specific tags
+#list_id <- tail(names(yaml::yaml.load_file("config.yml", eval.expr = FALSE)), -1) # run all tag
 
 
 for (id in list_id) {
@@ -36,15 +36,6 @@ for (id in list_id) {
     sd = config::get("sd", id),
     thr_mask = config::get("thr_mask", id)
   )
-
-  # If you have light data
-  # *Feel free to simply delete these lines*
-  if ("light" %in% names(tag)) {
-    tag <- twilight_create(tag,
-                           twl_offset = config::get("twl_offset", id)) |>
-      twilight_label_read() |>
-      geolight_map()
-  }
 
   # Create the graph
   graph <- graph_create(tag,
@@ -98,3 +89,24 @@ for (id in list_id) {
     file = glue::glue("./data/interim/{id}.RData")
   )
 }
+
+
+plot_path(path_most_likely)
+
+plot(marginal, path = path_most_likely)
+
+path_simulation <- graph_simulation(graph,
+                                    nj = 10) # Number of simulation
+plot_path(path_simulation, plot_leaflet = FALSE)
+
+knitr::kable(head(edge_most_likely, 3), digits = 1)
+
+
+geopressureviz(
+  tag,
+  #path = pressurepath,
+  path = path_most_likely,
+  marginal = marginal
+)
+
+
