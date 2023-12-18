@@ -1,19 +1,20 @@
 #1-label
 
 #Set working directory to your R Project root
-setwd("C:/Users/Garrett Rhyne/Documents/GitHub/Limnothlypis_Pressure_V3")
-getwd()
+#setwd("C:/Users/Garrett Rhyne/Documents/GitHub/Limnothlypis_Pressure_V3")
+# getwd()
+
 #Import necessary packages
 library(GeoPressureR)
 library(ggplot2)
 
-###IMPORTANT: Edit your "configure.yml" file so that each tag has the appropriate
+###IMPORTANT: Edit your "config.yml" file so that each tag has the appropriate
 # metadata assigned prior to running this code. It is where this file will be obtaining
 # configure information
 
 #Tag you want to work with
-id <- "CB627"
-tag <- tag_create(id = id)
+id <- "CB594"
+tag <- tag_create(id)
 plot(tag, type = "pressure")
 
 # Check the config is correct
@@ -34,8 +35,8 @@ plot(tag_no_crop, type = "pressure", plot_plotly = F) +
 # Create a tag with a cropped date
 tag <- tag_create(config::get("id", id),
                   crop_start = config::get("crop_start", id),
-                  crop_end = config::get("crop_end", id)
-)
+                  crop_end = config::get("crop_end", id),
+                  light_file = NA)
 
 # Create a csv file to label your data in TRAINSET
 tag_label_write(tag)
@@ -56,13 +57,18 @@ plot(tag, type = "pressure")
 # This creates a coarse map of each stationary location purely based on pressure
 tag <- tag_set_map(tag,
                    extent = config::get("extent", id),
-                   scale = 1,
+                   scale = 5,
                    known = config::get("known", id),
-                   include_min_duration = 0
-) |>
-  geopressure_map(max_sample = 50)
+                   include_min_duration = config::get("include_min_duration", id)) |>
+  geopressure_map()
 
-pressurepath <- pressurepath_create(tag)
+# Faster/more efficient way to label IMO -° directly use geopressureviz without pressurepath and query the pressure on the map directly
+geopressureviz(tag)
+
+# When closing geopressureviz, you get back the path drawn with `geopressureviz_path`
+plot_path(geopressureviz_path)
+
+pressurepath <- pressurepath_create(tag, path = geopressureviz_path)
 
 # Check 3 -
 plot_pressurepath(pressurepath)
