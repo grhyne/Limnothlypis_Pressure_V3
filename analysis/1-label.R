@@ -4,6 +4,8 @@
 setwd("C:/Users/Garrett Rhyne/Documents/GitHub/Limnothlypis_Pressure_V3")
 getwd()
 #Import necessary packages
+#install.packages("devtools")
+#devtools::install_github("Rafnuss/GeoPressureR")
 library(GeoPressureR)
 library(ggplot2)
 
@@ -68,14 +70,13 @@ pressurepath <- pressurepath_create(tag)
 plot_pressurepath(pressurepath)
 
 # Check 4 - Histogram of error distributions
-plot_pressurepath(pressurepath, type = "hist")
+plot_pressurepath(pressurepath, type = "histogram")
 
 # Check with GeoPressureViz, however, remember that this is preliminary pressure maps
 # that will be adjusted with our movement models!
 geopressureviz(
   tag,
-  path = pressurepath,
-  marginal = marginal
+  path = pressurepath
 )
 
 
