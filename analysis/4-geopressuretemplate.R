@@ -3,7 +3,7 @@
 library(GeoPressureR)
 
 # Run workflow step-by-step for a single tag
-id <- "18LX" # Run a single tag
+id <- "CB594" # Run a single tag
 geopressuretemplate_config(id)
 tag <- geopressuretemplate_tag(id)
 graph <- geopressuretemplate_graph(id)

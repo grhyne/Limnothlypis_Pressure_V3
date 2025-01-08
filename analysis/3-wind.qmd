@@ -15,7 +15,7 @@ This script will help you download the wind data for a `tag` and define the move
 :::
 
 ```{r setup}
-id <- "18LX"
+id <- "CB594"
 
 knitr::opts_knit$set(root.dir = here::here())
 library(GeoPressureR)
@@ -32,7 +32,7 @@ If you don't yet have one, create a ECMWF account at <https://www.ecmwf.int/> an
 Once created, you can retrieve your Personal Access Token on <https://cds.climate.copernicus.eu/profile> and save them in your environment file (i.e., `.Renviron`). You can open this file with `usethis::edit_r_environ()` and add:
 
 ```bash
-cds_token =  "{Personal Access Token}"
+cds_token =  "72144268-e78b-4232-9797-4afad84b7860"
 ```
 :::
 

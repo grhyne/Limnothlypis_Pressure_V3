@@ -90,7 +90,6 @@ geopressureviz(
   # path = pressurepath # Use this once computed (see below)
 )
 ```
-
 ## Twilight
 
 Adjust `twl_offset`.

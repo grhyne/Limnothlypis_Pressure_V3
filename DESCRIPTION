@@ -1,10 +1,10 @@
 Package: Limnothlypis_Pressure_V3
-Title: These are the Goal of my Study (One Line, Title Case)
-URL: https://github.com/Rafnuss/GeoPressureTemplate
-Description: More detailed description of my research objective with my dataset available (one paragraph).
+Title: Rangewide Connectivity and Migration Ecology of Swainson's Warblers (Limnothlypis swainsonii)
+URL: https://github.com/grhyne/Limnothlypis_Pressure_V3
+Description: Collaborators across the southeastern United States captured and tagged male Swainson's Warblers using multisensor geolocators (BARP50Z11-7, Migrate Technology) to study their migration ecology and migratory connectivity between eastern and western breeding populations. Using 14 tags, we implement the GeoPressureR pipeline to analyze barometric pressure data to answer our questions.
 Authors@R: 
-    person("Raphaël", "Nussbaumer", , "rafnuss@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-8185-1020"))
+    person("Garrett", "Rhyne", , "grhyne@abcbirds.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-4318-7840"))
 License: CC BY 4.0
 Version: 1.0.0.1
 Depends: 
