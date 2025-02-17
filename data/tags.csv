@@ -1,15 +1,15 @@
-﻿tag_id,scientific_name,ring_number,manufacturer,Model,firmware,weight,attachment_type,readout_method,tag_comments
-CB594,Limnothlypis swainsonii,272130380,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB596,Limnothlypis swainsonii,272130371,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB598,Limnothlypis swainsonii,256052956,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB599,Limnothlypis swainsonii,256052964,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB601,Limnothlypis swainsonii,256052963,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB608,Limnothlypis swainsonii,289020410,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB611,Limnothlypis swainsonii,289020409,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB616,Limnothlypis swainsonii,289048504,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB619,Limnothlypis swainsonii,289048506,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB620,Limnothlypis swainsonii,289048507,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB621,Limnothlypis swainsonii,252150608,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB623,Limnothlypis swainsonii,252150629,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB624,Limnothlypis swainsonii,252150626,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
-CB627,Limnothlypis swainsonii,252150612,Migrate Technology,BARP50Z11-7,,0.58,leg-loop-harness,tag-retrieval,
+tag_id	scientific_name	ring_number	manufacturer	model	firmware	weight	attachment_type	readout_method	tag_comments
+CB594	Limnothlypis swainsonii	272130380	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB596	Limnothlypis swainsonii	272130371	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB598	Limnothlypis swainsonii	256052956	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB599	Limnothlypis swainsonii	256052964	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB601	Limnothlypis swainsonii	256052963	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB608	Limnothlypis swainsonii	289020410	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB611	Limnothlypis swainsonii	289020409	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB616	Limnothlypis swainsonii	289048504	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB619	Limnothlypis swainsonii	289048506	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB620	Limnothlypis swainsonii	289048507	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB621	Limnothlypis swainsonii	252150608	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB623	Limnothlypis swainsonii	252150629	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB624	Limnothlypis swainsonii	252150626	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	
+CB627	Limnothlypis swainsonii	252150612	Migrate Technology	BARP50Z11-7		0.58	leg-loop-harness	tag-retrieval	

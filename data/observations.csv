@@ -1,4 +1,4 @@
-ring_number,tag_id,datetime,location_name,latitude,longitude,observation_type,device_status,observer,catching_method,life_stage,sex,condition,mass,wing_length,additional_metric,observation_comments
+ring_number,tag_id,datetime,location_name,latitude,longitude,observation_type,device_status,observer,catching_method,age_class,sex,condition,mass,wing_length,additional_metric,observation_comments
 272130380,CB594,2021-06-21T10:39:00Z,Edisto Nature Trail,32.7678349,-80.4471493,equipment,present,Jen Tyrrell,M,2,M,alive,14.4,71,,
 272130380,CB594,2022-05-21T09:00:00Z,Edisto Nature Trail,32.7678349,-80.4471493,retrieval,present,Jen Tyrrell,M,2,M,alive,16.3,70,,
 272130371,CB596,2021-05-25T10:15:00Z,MAPS Station,33.219626,-80.35476,equipment,present,Jen Tyrrell,M,2,M,alive,13.1,70,,
